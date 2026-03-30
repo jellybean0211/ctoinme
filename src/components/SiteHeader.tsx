@@ -10,9 +10,8 @@ import type { User } from "@supabase/supabase-js";
 
 const baseNavLinks = [
   { label: "Home", href: "/" },
-  { label: "Student Stories", href: "#testimonials" },
-  { label: "Curriculum", href: "#menu" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Course", href: "#menu" },
+  { label: "Features", href: "#features" },
   { label: "Pricing", href: "#pricing" },
 ];
 
@@ -36,15 +35,12 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 shadow-sm backdrop-blur-lg">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6">
-        {/* Logo */}
-        <Link href="/" className="flex shrink-0 items-center gap-2">
-          <Image
-            src="/images/logo.jpg"
-            alt="CTO in You"
-            width={32}
-            height={32}
-            className="rounded-sm"
-          />
+        {/* Brand */}
+        <Link
+          href="/"
+          className="shrink-0 text-base font-semibold tracking-[0.2em] text-foreground uppercase"
+        >
+          cto in me
         </Link>
 
         {/* Desktop nav */}

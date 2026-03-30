@@ -39,7 +39,7 @@ export function SiteFooter() {
         {/* Left column */}
         <div className="flex-1">
           <span className="text-lg font-semibold">CTO in Me</span>
-          <p className="mt-4 max-w-sm text-sm text-muted-foreground">
+          <p className="mt-4 max-w-sm text-justify text-sm text-muted-foreground">
             Hands-on AI coding education for non-technical people. Learn to build real projects and become indispensable at work.
           </p>
         </div>

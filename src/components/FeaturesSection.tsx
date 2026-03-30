@@ -13,13 +13,13 @@ const features = [
   },
   {
     icon: Code,
-    title: "Cursor + Claude",
-    description: "In-depth coverage of using Cursor editor and Claude AI together to boost your development efficiency.",
+    title: "Visual Code + Claude",
+    description: "In-depth coverage of using Visual Code and Claude together to boost your development efficiency.",
   },
   {
     icon: Layers,
     title: "Full-Stack Development",
-    description: "Covers frontend, backend, mobile, browser extensions, and more across multiple development domains.",
+    description: "Covers frontend, backend and AI workflows.",
   },
   {
     icon: MessageCircle,
@@ -41,9 +41,9 @@ export function FeaturesSection() {
           Course Features
         </span>
         <h2 className="mt-4 text-3xl font-bold md:text-4xl">
-          Comprehensive AI Coding Learning System
+          Comprehensive AI Learning System
         </h2>
-        <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
+        <p className="mx-auto mt-3 max-w-2xl text-center text-muted-foreground">
           A complete learning path from tool setup to hands-on projects, designed so even complete beginners can get started quickly
         </p>
 
@@ -57,7 +57,7 @@ export function FeaturesSection() {
                 <feature.icon className="h-6 w-6 text-primary" />
               </div>
               <h3 className="mt-4 text-lg font-semibold">{feature.title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">
+              <p className="mt-2 text-justify text-sm text-muted-foreground">
                 {feature.description}
               </p>
             </div>

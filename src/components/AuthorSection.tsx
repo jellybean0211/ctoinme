@@ -50,7 +50,7 @@ export function AuthorSection() {
             priority
           />
         </div>
-        <p className="mb-8 text-muted-foreground">Software Engineer &amp; Entrepreneur &amp; Course Creator</p>
+        <p className="mb-8 text-justify text-muted-foreground">CTO. Course Creator.</p>
 
         {/* Social Links */}
         <div className="mb-10 flex flex-wrap gap-3">
@@ -75,10 +75,10 @@ export function AuthorSection() {
         </div>
 
         {/* Author Bio */}
-        <p className="text-muted-foreground leading-relaxed">
-          I&apos;m a software engineer with experience building products, leading a 6-person engineering team, and shipping fast. I&apos;ve built AI SaaS products generating recurring revenue, and shipped dozens of apps — many of them built entirely with AI coding tools like Cursor and Claude Code.
+        <p className="text-justify leading-relaxed text-muted-foreground">
+          I&apos;m a software engineer with experience building profitable apps and shipping fast. I&apos;ve built software products generating recurring revenue, and shipped dozens of apps — many of them built entirely with AI coding tools like Cursor and Claude Code.
         </p>
-        <p className="mt-4 text-muted-foreground leading-relaxed">
+        <p className="mt-4 text-justify leading-relaxed text-muted-foreground">
           This course exists because I&apos;ve seen firsthand how these tools can transform the way people work — even if they&apos;ve never written a line of code. I&apos;m not teaching theory. I&apos;m teaching the exact workflow I use every day to ship real products.
         </p>
 
@@ -93,8 +93,8 @@ export function AuthorSection() {
             <p className="text-sm text-muted-foreground">Profitable apps built over the years</p>
           </div>
           <div className="rounded-lg border border-border bg-muted/50 p-4 text-center">
-            <p className="text-2xl font-bold">20k followers</p>
-            <p className="text-sm text-muted-foreground">across social platforms</p>
+            <p className="text-2xl font-bold">20k+</p>
+            <p className="text-sm text-muted-foreground">followers across social platforms</p>
           </div>
         </div>
       </div>

@@ -61,13 +61,18 @@ export function CoursesSection() {
     <section id="menu" className="w-full px-4 py-20">
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 flex flex-col items-center text-center">
-          <span className="mb-4 rounded-full bg-muted px-4 py-1 text-sm">
-            Course Structure
-          </span>
+          <div className="mb-4 flex flex-wrap items-center justify-center gap-2">
+            <span className="rounded-full bg-muted px-4 py-1 text-sm">
+              Course Structure
+            </span>
+            <span className="rounded-full border border-border/60 px-3 py-1 text-xs text-muted-foreground">
+              Subject to change
+            </span>
+          </div>
           <h2 className="mb-4 text-3xl font-bold md:text-4xl">
             150+ Videos. 3 Tiers. 1 Clear Build Path.
           </h2>
-          <p className="max-w-2xl text-muted-foreground">
+          <p className="max-w-2xl text-justify text-muted-foreground">
             The curriculum is organized so beginners can ship first, improve second,
             and polish last. Each lesson is short, practical, and tied to a real
             app-building outcome.
@@ -108,14 +113,14 @@ export function CoursesSection() {
                     {card.count}
                   </span>
                 </div>
-                <p className="mt-1 text-sm text-muted-foreground">{card.subtitle}</p>
+                <p className="mt-1 text-justify text-sm text-muted-foreground">{card.subtitle}</p>
               </div>
 
               <div className="rounded-xl border border-border/50 bg-background/60 p-4">
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground/70">
                   Outcome
                 </p>
-                <p className="mt-2 text-sm font-medium">{card.outcome}</p>
+                <p className="mt-2 text-justify text-sm font-medium">{card.outcome}</p>
               </div>
 
               <div className="mt-4 rounded-xl border border-border/50 bg-muted/40 p-4">

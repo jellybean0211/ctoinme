@@ -7,10 +7,10 @@ export function CTASection({ waitlistOnly }: { waitlistOnly: boolean }) {
         <h2 className="text-3xl font-bold md:text-4xl">
           {waitlistOnly ? "Want First Access When It Launches?" : "Ready to Start Your AI Coding Journey?"}
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-background/60">
+        <p className="mx-auto mt-4 max-w-2xl text-center text-background/60">
           {waitlistOnly
-            ? "Join the waitlist and get launch updates as soon as enrollment opens."
-            : "Go from zero experience to building real projects with AI as your coding assistant."}
+            ? "Join the waitlist and get launch updates as soon as enrollment opens!"
+            : "Go from zero experience to building real projects with AI as your CTO."}
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
@@ -22,7 +22,7 @@ export function CTASection({ waitlistOnly }: { waitlistOnly: boolean }) {
           </Link>
         </div>
 
-        <p className="mt-6 text-sm text-background/40">
+        <p className="mt-6 text-center text-sm text-background/40">
           {waitlistOnly
             ? "No spam. Just launch updates and early access."
             : "RM499/year, includes all course content and community access. 14-day money-back guarantee."}

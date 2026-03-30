@@ -28,7 +28,7 @@ function LoginForm() {
     <div className="w-full max-w-sm space-y-8">
       <div className="flex flex-col items-center space-y-4">
         <Image
-          src="/images/logo.jpg"
+          src="/images/dp.jpeg"
           alt="Logo"
           width={64}
           height={64}

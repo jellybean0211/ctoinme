@@ -5,8 +5,8 @@ export function TopBanner({ waitlistOnly }: { waitlistOnly: boolean }) {
     <div className="flex w-full min-h-14 items-center justify-center gap-4 bg-foreground px-4 py-2 text-center">
       <p className="text-sm font-medium text-background">
         {waitlistOnly
-          ? "Join the waitlist to get launch updates and first access when enrollment opens"
-          : "Enrollment is open now for the first cohort"}
+          ? "Get launch updates and first access when enrollment opens!"
+          : "Enrollment is open now for the first cohort!"}
       </p>
       <Link
         href="#pricing"

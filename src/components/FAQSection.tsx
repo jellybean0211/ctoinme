@@ -19,21 +19,21 @@ const faqs = [
     answer:
       "Absolutely! We continuously update the course content to cover the latest AI tools and technologies, including the newest model API integrations, the latest version of Cursor, and more.",
   },
-  {
-    question: "How do I start learning after purchasing?",
-    answer:
-      "After purchasing, you can join the exclusive Whatsapp group and get access to course documents, video tutorials, and source code. Follow the course outline starting from the basics, and ask questions in the group whenever you need help.",
-  },
-  {
-    question: "How do I join the Q&A group after purchasing?",
-    answer:
-      "You will receive an email shortly after your purchase with instructions.",
-  },
-  {
-    question: "What if I'm not satisfied? Can I get a refund?",
-    answer:
-      "Yes. You have a full 14-day money-back guarantee. If the course isn't what you expected, just reach out and you'll get a full refund — no questions asked.",
-  },
+  // {
+  //   question: "How do I start learning after purchasing?",
+  //   answer:
+  //     "After purchasing, you can join the exclusive Whatsapp group and get access to course documents, video tutorials, and source code. Follow the course outline starting from the basics, and ask questions in the group whenever you need help.",
+  // },
+  // {
+  //   question: "How do I join the Q&A group after purchasing?",
+  //   answer:
+  //     "You will receive an email shortly after your purchase with instructions.",
+  // },
+  // {
+  //   question: "What if I'm not satisfied? Can I get a refund?",
+  //   answer:
+  //     "Yes. You have a full 14-day money-back guarantee. If the course isn't what you expected, just reach out and you'll get a full refund — no questions asked.",
+  // },
   {
     question: "What exactly do I get when I purchase?",
     answer:
@@ -55,7 +55,7 @@ export function FAQSection() {
           FAQ
         </span>
         <h2 className="mt-4 text-3xl font-bold md:text-4xl">Frequently Asked Questions</h2>
-        <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
+        <p className="mx-auto mt-3 max-w-2xl text-center text-muted-foreground">
           Common questions about the course
         </p>
       </div>
@@ -83,7 +83,7 @@ export function FAQSection() {
                 }`}
               >
                 <div className="overflow-hidden">
-                  <p className="pb-5 text-muted-foreground whitespace-pre-line">
+                  <p className="pb-5 text-justify whitespace-pre-line text-muted-foreground">
                     {faq.answer}
                   </p>
                 </div>

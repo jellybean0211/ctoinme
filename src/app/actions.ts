@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
+import { createAdminClient } from '@/lib/supabase/admin'
 import { redirect } from 'next/navigation'
 
 export type WaitlistState = {
@@ -44,7 +45,10 @@ export async function joinWaitlist(
     return { error: 'Please enter a valid email address.', success: null }
   }
 
-  const supabase = await createClient()
+  const supabase = process.env.SUPABASE_SERVICE_ROLE_KEY
+    ? createAdminClient()
+    : await createClient()
+
   const { error } = await supabase
     .from('waitlist_entries')
     .insert({ email, goal: goal || null, source })
@@ -53,7 +57,27 @@ export async function joinWaitlist(
     return { error: null, success: 'You are already on the waitlist.' }
   }
 
+  if (error?.code === 'PGRST205') {
+    console.error('Missing waitlist_entries table in Supabase schema cache', {
+      code: error.code,
+      message: error.message,
+      hint: error.hint,
+    })
+    return {
+      error: 'Waitlist storage is not set up yet. Apply the waitlist database migration and try again.',
+      success: null,
+    }
+  }
+
   if (error) {
+    console.error('Failed to insert waitlist entry', {
+      code: error.code,
+      message: error.message,
+      details: error.details,
+      hint: error.hint,
+      email,
+      source,
+    })
     return { error: 'Could not save your email right now. Please try again.', success: null }
   }
 

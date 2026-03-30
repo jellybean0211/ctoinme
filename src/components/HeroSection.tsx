@@ -18,7 +18,7 @@ export function HeroSection({ waitlistOnly }: { waitlistOnly: boolean }) {
         </h1>
 
         {/* Subtitle */}
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
+        <p className="mx-auto mt-6 max-w-2xl text-justify text-lg text-muted-foreground">
           A step-by-step video course for complete beginners who want to go from
           idea to live app with AI. Learn the workflow for planning, designing,
           building, deploying, and monetizing a real product using plain-language
@@ -58,8 +58,8 @@ export function HeroSection({ waitlistOnly }: { waitlistOnly: boolean }) {
         </div>
 
         {/* Refund guarantee */}
-        <p className="mt-4 text-xs text-muted-foreground/70">
-          Every lesson is under 10 minutes. Full refund within 14 days if it is not
+        <p className="mt-4 text-center text-xs text-muted-foreground/70">
+          Every lesson is under 15 minutes. Full refund within 14 days if it is not
           the right fit.
         </p>
       </div>

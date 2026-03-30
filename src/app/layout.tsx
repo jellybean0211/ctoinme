@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Zero to Hero AI Coding Course - Build Apps with Cursor + Claude",
     description:
       "A beginner-friendly AI coding course built around Cursor + Claude. Learn by building dozens of real projects — websites, mini-apps, browser extensions, mobile apps, and AI agents. No coding experience required!",
-    images: ["/images/og.png"],
+    images: ["/images/dp.jpeg"],
     type: "website",
   },
   twitter: {
