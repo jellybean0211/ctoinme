@@ -15,7 +15,7 @@ const baseNavLinks = [
   { label: "Pricing", href: "#pricing" },
 ];
 
-const loginEnabled = process.env.NEXT_PUBLIC_LOGIN_ENABLED === "true";
+const loginEnabled = process.env.WAITLIST_ONLY !== "true";
 
 export function SiteHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);

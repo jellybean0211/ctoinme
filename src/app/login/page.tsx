@@ -8,7 +8,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowLeft, Loader2 } from 'lucide-react'
 
-const loginEnabled = process.env.NEXT_PUBLIC_LOGIN_ENABLED === 'true'
+const loginEnabled = process.env.WAITLIST_ONLY !== 'true'
 
 function LoginForm() {
   const [loading, setLoading] = useState(false)
