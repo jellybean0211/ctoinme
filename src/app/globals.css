@@ -1,0 +1,132 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-base-100: var(--base-100);
+  --color-base-200: var(--base-200);
+  --color-base-300: var(--base-300);
+  --color-base-content: var(--base-content);
+  --color-primary: var(--primary);
+  --color-primary-content: var(--primary-content);
+  --color-golden: #e0a82e;
+  --color-golden-light: #f5d98a;
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-box: 1rem;
+  --radius-btn: 0.5rem;
+  --radius-badge: 1.25rem;
+}
+
+:root {
+  /* Cream light theme */
+  --background: #f7f1e3;
+  --foreground: #1a1a1a;
+  --base-100: #fffdf8;
+  --base-200: #f7f1e3;
+  --base-300: #ede5d3;
+  --base-content: #1a1a1a;
+  --primary: #e0a82e;
+  --primary-content: #131616;
+  --border: rgba(0, 0, 0, 0.1);
+  --input: rgba(0, 0, 0, 0.1);
+  --ring: #e0a82e;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --muted: #ebe4d8;
+  --muted-foreground: rgba(26, 26, 26, 0.5);
+  --accent: #ebe4d8;
+  --accent-foreground: #1a1a1a;
+  --secondary: #ebe4d8;
+  --secondary-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  --destructive: #ff5555;
+  --radius: 0.625rem;
+  --chart-1: #e0a82e;
+}
+
+/* Dark theme (used by /ctoinme) */
+.dark {
+  --background: hsl(240 10% 3.9%);
+  --foreground: hsl(0 0% 98%);
+  --card: hsl(240 10% 3.9%);
+  --card-foreground: hsl(0 0% 98%);
+  --popover: hsl(240 10% 3.9%);
+  --popover-foreground: hsl(0 0% 98%);
+  --primary: hsl(217 91% 60%);
+  --primary-content: hsl(0 0% 98%);
+  --secondary: hsl(240 3.7% 15.9%);
+  --secondary-foreground: hsl(0 0% 98%);
+  --muted: hsl(240 3.7% 15.9%);
+  --muted-foreground: hsl(240 5% 64.9%);
+  --accent: hsl(240 3.7% 15.9%);
+  --accent-foreground: hsl(0 0% 98%);
+  --destructive: hsl(0 62.8% 30.6%);
+  --border: hsl(240 3.7% 15.9%);
+  --input: hsl(240 3.7% 15.9%);
+  --ring: hsl(217 91% 60%);
+  --base-100: hsl(240 10% 3.9%);
+  --base-200: hsl(240 10% 3.9%);
+  --base-300: hsl(240 5% 10%);
+  --base-content: hsl(0 0% 98%);
+  --radius: 1rem;
+}
+
+/* Marquee animation for tools section */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Hide scrollbar utility */
+.noscrollbar::-webkit-scrollbar {
+  display: none;
+}
+.noscrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-base-200 text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+}
