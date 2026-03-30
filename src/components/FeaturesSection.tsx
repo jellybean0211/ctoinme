@@ -4,32 +4,32 @@ const features = [
   {
     icon: GraduationCap,
     title: "Beginner-Friendly",
-    description: "Designed for coding newcomers, starting from the most fundamental concepts and progressing step by step into AI-assisted development.",
+    description: "Structured for complete beginners, with a clear path from first prompt to first working product.",
   },
   {
     icon: Rocket,
     title: "Project-Driven Learning",
-    description: "Learn through dozens of real-world project examples, including websites, mini-apps, browser extensions, and mobile apps.",
+    description: "Learn by building real assets: landing pages, internal tools, mini apps, and monetizable products.",
   },
   {
     icon: Code,
-    title: "Visual Code + Claude",
-    description: "In-depth coverage of using Visual Code and Claude together to boost your development efficiency.",
+    title: "VS Code + Claude Workflows",
+    description: "Use modern AI coding workflows in a practical way, not as a demo. You will learn how to prompt, verify, debug, and ship.",
   },
   {
     icon: Layers,
     title: "Full-Stack Development",
-    description: "Covers frontend, backend and AI workflows.",
+    description: "Covers frontend, backend, databases, deployment, payments, and the AI workflow that ties them together.",
   },
   {
     icon: MessageCircle,
-    title: "Whatsapp Q&A Group",
-    description: "I personally answer questions in the Whatsapp group to help you solve any issues you encounter while learning.",
+    title: "WhatsApp Q&A Group",
+    description: "Get direct support when you are stuck so you keep shipping instead of losing momentum.",
   },
   {
     icon: Star,
     title: "Continuously Updated",
-    description: "Course content is continuously updated to keep up with the latest AI technology trends and tools.",
+    description: "The material evolves with the tooling, so you are learning workflows that stay relevant as the AI stack changes.",
   },
 ]
 
@@ -41,10 +41,11 @@ export function FeaturesSection() {
           Course Features
         </span>
         <h2 className="mt-4 text-3xl font-bold md:text-4xl">
-          Comprehensive AI Learning System
+          A Practical System for Shipping with AI
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-muted-foreground">
-          A complete learning path from tool setup to hands-on projects, designed so even complete beginners can get started quickly
+          A complete path from setup to launch, designed so a complete beginner can
+          build something useful fast and keep improving from there.
         </p>
 
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

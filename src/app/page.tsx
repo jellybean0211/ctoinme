@@ -9,6 +9,7 @@ import { PricingSection } from "@/components/PricingSection";
 import { FAQSection } from "@/components/FAQSection";
 import { CTASection } from "@/components/CTASection";
 import { SiteFooter } from "@/components/SiteFooter";
+import { WaitlistModalRoot } from "@/components/WaitlistModalRoot";
 
 export default function HomePage() {
   const waitlistOnly = process.env.WAITLIST_ONLY === "true";
@@ -16,7 +17,8 @@ export default function HomePage() {
   return (
     <div className="flex min-h-[100dvh] flex-col bg-background text-foreground">
       <TopBanner waitlistOnly={waitlistOnly} />
-      <SiteHeader />
+      <SiteHeader waitlistOnly={waitlistOnly} />
+      <WaitlistModalRoot />
       <main className="flex-1">
         <HeroSection waitlistOnly={waitlistOnly} />
         <WhoIsThisFor />

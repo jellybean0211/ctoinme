@@ -7,17 +7,17 @@ const faqs = [
   {
     question: "I have zero coding experience. Can I still learn?",
     answer:
-      "Absolutely! Our course is designed specifically for beginners with no prior experience. We use a project-driven approach so you naturally pick up the necessary skills through practice. Every project comes with detailed video tutorials and source code.",
+      "Yes. The course is built for beginners. You follow a project-driven path, learn the minimum you need at each step, and use AI tools to close the gap instead of trying to learn traditional software engineering first.",
   },
   {
     question: "What will I be able to do after completing this course?",
     answer:
-      "You'll be able to independently develop a variety of AI-powered applications, including websites, mobile apps and workflows. These skills can be directly applied to your work and personal projects, and you can even take on freelance projects.",
+      "You will be able to plan, build, launch, and improve practical software such as internal tools, lead-generation apps, client projects, and simple products you can charge for.",
   },
   {
     question: "Does the course cover the latest AI technologies?",
     answer:
-      "Absolutely! We continuously update the course content to cover the latest AI tools and technologies, including the newest model API integrations, the latest version of Cursor, and more.",
+      "Yes. The course is updated as the tooling changes so the workflows stay current, including modern AI editors, model integrations, and shipping practices.",
   },
   // {
   //   question: "How do I start learning after purchasing?",
@@ -37,7 +37,7 @@ const faqs = [
   {
     question: "What exactly do I get when I purchase?",
     answer:
-      "You get: step-by-step video modules covering every project, complete source code and project templates you can use immediately, access to a private community group where I personally answer questions, and continuous updates as new AI tools and techniques emerge.",
+      "You get step-by-step video lessons, complete source code, reusable templates, practical build workflows, community access, and ongoing updates as the AI tooling evolves.",
   },
 ]
 

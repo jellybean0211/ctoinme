@@ -1,8 +1,8 @@
 "use client";
 
-import { useActionState, useEffect, useState } from "react";
-import { Check, X } from "lucide-react";
-import { joinWaitlist, type WaitlistState } from "@/app/actions";
+import { useState } from "react";
+import { Check } from "lucide-react";
+import { WaitlistTrigger } from "@/components/WaitlistTrigger";
 
 const features = [
   "Full course content",
@@ -36,32 +36,9 @@ const plans = [
   },
 ];
 
-const initialWaitlistState: WaitlistState = {
-  error: null,
-  success: null,
-};
-
 export function PricingSection({ waitlistOnly }: { waitlistOnly: boolean }) {
-  const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
   const [activePlanId, setActivePlanId] = useState<(typeof plans)[number]["id"]>("1year");
-  const [waitlistEmail, setWaitlistEmail] = useState("");
-  const [waitlistGoal, setWaitlistGoal] = useState("");
-  const [waitlistState, waitlistAction, waitlistPending] = useActionState(
-    joinWaitlist,
-    initialWaitlistState,
-  );
   const activePlan = plans.find((plan) => plan.id === activePlanId) ?? plans[1];
-
-  useEffect(() => {
-    if (!waitlistState.success) return;
-
-    setWaitlistEmail("");
-    setWaitlistGoal("");
-  }, [waitlistState.success]);
-
-  function openWaitlist(planName: string) {
-    setSelectedPlan(planName);
-  }
 
   return (
     <section
@@ -83,7 +60,7 @@ export function PricingSection({ waitlistOnly }: { waitlistOnly: boolean }) {
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-muted-foreground">
           {waitlistOnly
-            ? "Leave your email and we will notify you as soon as the course opens."
+            ? "Leave your email to get first access, launch pricing, and the exact date enrollment opens."
             : "Choose the plan that fits you and start your AI coding journey today."}
         </p>
 
@@ -147,13 +124,13 @@ export function PricingSection({ waitlistOnly }: { waitlistOnly: boolean }) {
                   ) : null}
                 </div>
 
-                <button
-                  type="button"
-                  onClick={() => openWaitlist(activePlan.name)}
+                <WaitlistTrigger
+                  planName={activePlan.name}
+                  source={`pricing_${activePlan.name.toLowerCase().replace(/\s+/g, "_")}`}
                   className="mt-6 w-full rounded-xl bg-foreground px-6 py-3 font-semibold text-background transition hover:bg-foreground/90"
                 >
                   Join Waitlist
-                </button>
+                </WaitlistTrigger>
               </div>
 
               <div className="rounded-2xl border border-border/60 bg-muted/40 p-6">
@@ -179,26 +156,25 @@ export function PricingSection({ waitlistOnly }: { waitlistOnly: boolean }) {
                 <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-center gap-3">
                     <Check className="size-4 shrink-0 text-foreground/50" />
-                    You get early launch updates
+                    You get launch updates and the opening date first
                   </li>
                   <li className="flex items-center gap-3">
                     <Check className="size-4 shrink-0 text-foreground/50" />
-                    You hear first when enrollment opens
+                    You get first access when enrollment opens
                   </li>
                   <li className="flex items-center gap-3">
                     <Check className="size-4 shrink-0 text-foreground/50" />
-                    You stay in the loop as the curriculum evolves
+                    You hear about launch pricing and curriculum updates
                   </li>
                 </ul>
               </div>
 
-              <button
-                type="button"
-                onClick={() => openWaitlist("waitlist_only")}
+              <WaitlistTrigger
+                source="landing_page_waitlist"
                 className="mt-6 w-full rounded-xl bg-foreground px-6 py-3 font-semibold text-background transition hover:bg-foreground/90"
               >
-                Join General Waitlist
-              </button>
+                Join Waitlist
+              </WaitlistTrigger>
             </div>
           ) : (
             <p className="mt-8 text-sm text-muted-foreground">
@@ -208,84 +184,6 @@ export function PricingSection({ waitlistOnly }: { waitlistOnly: boolean }) {
           )}
         </>
 
-        {selectedPlan ? (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4">
-            <div className="w-full max-w-lg rounded-2xl border border-border bg-background p-6 text-left shadow-2xl">
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <p className="text-sm text-muted-foreground">Join Waitlist</p>
-                  <h3 className="mt-1 text-2xl font-semibold">
-                    Save your spot for{" "}
-                    {selectedPlan === "waitlist_only" ? "the course launch" : selectedPlan}
-                  </h3>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => setSelectedPlan(null)}
-                  className="rounded-full border border-border p-2 transition hover:bg-muted"
-                  aria-label="Close waitlist modal"
-                >
-                  <X className="size-4" />
-                </button>
-              </div>
-
-              <form action={waitlistAction} className="mt-6 space-y-4">
-                <input
-                  type="hidden"
-                  name="source"
-                  value={
-                    selectedPlan === "waitlist_only"
-                      ? "landing_page_waitlist"
-                      : `pricing_${selectedPlan.toLowerCase().replace(/\s+/g, "_")}`
-                  }
-                />
-                <div>
-                  <label htmlFor="waitlist-modal-email" className="mb-2 block text-sm font-medium">
-                    Email address
-                  </label>
-                  <input
-                    id="waitlist-modal-email"
-                    name="email"
-                    type="email"
-                    required
-                    value={waitlistEmail}
-                    onChange={(event) => setWaitlistEmail(event.target.value)}
-                    placeholder="you@example.com"
-                    className="w-full rounded-xl border border-border bg-background px-4 py-3 outline-none transition focus:border-foreground"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="waitlist-modal-goal" className="mb-2 block text-sm font-medium">
-                    What is your goal for joining this course?
-                  </label>
-                  <textarea
-                    id="waitlist-modal-goal"
-                    name="goal"
-                    rows={4}
-                    value={waitlistGoal}
-                    onChange={(event) => setWaitlistGoal(event.target.value)}
-                    placeholder="For example: launch my first app, learn Cursor properly, or build internal tools for work."
-                    className="w-full rounded-xl border border-border bg-background px-4 py-3 outline-none transition focus:border-foreground"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  disabled={waitlistPending}
-                  className="w-full rounded-xl bg-foreground px-6 py-3 font-semibold text-background transition hover:bg-foreground/90 disabled:opacity-50"
-                >
-                  {waitlistPending ? "Joining..." : "Join Waitlist"}
-                </button>
-              </form>
-
-              {waitlistState.error ? (
-                <p className="mt-4 text-sm text-red-500">{waitlistState.error}</p>
-              ) : null}
-              {waitlistState.success ? (
-                <p className="mt-4 text-sm text-emerald-400">{waitlistState.success}</p>
-              ) : null}
-            </div>
-          </div>
-        ) : null}
       </div>
     </section>
   );

@@ -76,10 +76,16 @@ export function AuthorSection() {
 
         {/* Author Bio */}
         <p className="text-justify leading-relaxed text-muted-foreground">
-          I&apos;m a software engineer with experience building profitable apps and shipping fast. I&apos;ve built software products generating recurring revenue, and shipped dozens of apps — many of them built entirely with AI coding tools like Cursor and Claude Code.
+          I&apos;m a software engineer who builds products with a strong bias toward
+          speed, clarity, and commercial outcomes. I&apos;ve shipped products that
+          generate recurring revenue, and many of them were built with AI coding
+          tools like Cursor and Claude Code.
         </p>
         <p className="mt-4 text-justify leading-relaxed text-muted-foreground">
-          This course exists because I&apos;ve seen firsthand how these tools can transform the way people work — even if they&apos;ve never written a line of code. I&apos;m not teaching theory. I&apos;m teaching the exact workflow I use every day to ship real products.
+          This course exists because I&apos;ve seen how much leverage these tools give
+          non-technical people when the workflow is taught properly. I&apos;m not
+          teaching theory. I&apos;m teaching the exact process I use to plan, ship,
+          and improve real products.
         </p>
 
         {/* Proof */}
@@ -94,7 +100,7 @@ export function AuthorSection() {
           </div>
           <div className="rounded-lg border border-border bg-muted/50 p-4 text-center">
             <p className="text-2xl font-bold">20k+</p>
-            <p className="text-sm text-muted-foreground">followers across social platforms</p>
+            <p className="text-sm text-muted-foreground">Followers across social platforms</p>
           </div>
         </div>
       </div>

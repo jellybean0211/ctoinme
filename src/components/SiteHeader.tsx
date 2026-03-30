@@ -7,6 +7,7 @@ import { Menu, Moon, Sun, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { createClient } from "@/lib/supabase/client";
 import type { User } from "@supabase/supabase-js";
+import { WaitlistTrigger } from "@/components/WaitlistTrigger";
 
 const baseNavLinks = [
   { label: "Home", href: "/" },
@@ -15,11 +16,10 @@ const baseNavLinks = [
   { label: "Pricing", href: "#pricing" },
 ];
 
-const loginEnabled = process.env.WAITLIST_ONLY !== "true";
-
-export function SiteHeader() {
+export function SiteHeader({ waitlistOnly }: { waitlistOnly: boolean }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [user, setUser] = useState<User | null>(null);
+  const loginEnabled = !waitlistOnly;
 
   useEffect(() => {
     const supabase = createClient();
@@ -69,7 +69,14 @@ export function SiteHeader() {
           </button>
 
           {/* Auth: Sign In or Avatar */}
-          {loginEnabled &&
+          {waitlistOnly ? (
+            <WaitlistTrigger
+              source="header_waitlist"
+              className="hidden rounded-lg bg-primary px-3 py-1.5 text-sm font-medium text-primary-content transition hover:bg-primary/90 md:inline-flex"
+            >
+              Join Waitlist
+            </WaitlistTrigger>
+          ) : loginEnabled &&
             (user ? (
               <Link href="/dashboard" className="flex items-center gap-2">
                 {user.user_metadata?.avatar_url ? (
@@ -125,7 +132,15 @@ export function SiteHeader() {
               {link.label}
             </Link>
           ))}
-          {loginEnabled && !user && (
+          {waitlistOnly ? (
+            <WaitlistTrigger
+              source="header_waitlist"
+              className="mt-1 rounded-md bg-primary px-3 py-2 text-center text-sm font-medium text-primary-content transition hover:bg-primary/90"
+              onOpen={() => setMobileOpen(false)}
+            >
+              Join Waitlist
+            </WaitlistTrigger>
+          ) : loginEnabled && !user ? (
             <Link
               href="/login"
               className="mt-1 rounded-md bg-primary px-3 py-2 text-center text-sm font-medium text-primary-content transition hover:bg-primary/90"
@@ -133,7 +148,7 @@ export function SiteHeader() {
             >
               Sign In
             </Link>
-          )}
+          ) : null}
         </div>
       </nav>
     </header>

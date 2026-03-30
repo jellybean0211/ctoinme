@@ -1,4 +1,5 @@
 import { ExternalLink } from "lucide-react";
+import { WaitlistTrigger } from "@/components/WaitlistTrigger";
 
 interface TierCard {
   title: string;
@@ -73,9 +74,9 @@ export function CoursesSection() {
             150+ Videos. 3 Tiers. 1 Clear Build Path.
           </h2>
           <p className="max-w-2xl text-justify text-muted-foreground">
-            The curriculum is organized so beginners can ship first, improve second,
-            and polish last. Each lesson is short, practical, and tied to a real
-            app-building outcome.
+            The curriculum is organized so beginners ship first, systemize second,
+            and optimize third. Each lesson is short, practical, and tied to a real
+            business or product outcome.
           </p>
         </div>
 
@@ -94,7 +95,7 @@ export function CoursesSection() {
           </div>
           <div>
             <p className="text-2xl font-semibold">Beginner</p>
-            <p className="text-sm text-muted-foreground">To live app</p>
+            <p className="text-sm text-muted-foreground">To launched product</p>
           </div>
         </div>
 
@@ -140,13 +141,13 @@ export function CoursesSection() {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <a
-            href="#pricing"
+          <WaitlistTrigger
+            source="courses_waitlist"
             className="inline-flex items-center gap-2 rounded-full bg-foreground px-8 py-3 font-medium text-background transition-colors hover:bg-foreground/90"
           >
             Join Waitlist
             <ExternalLink className="h-4 w-4" />
-          </a>
+          </WaitlistTrigger>
         </div>
       </div>
     </section>

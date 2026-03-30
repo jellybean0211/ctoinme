@@ -21,10 +21,12 @@ export function WhoIsThisFor() {
             Who Is This For
           </span>
           <h2 className="mt-4 text-3xl font-bold md:text-4xl">
-            Built for Non-Technical People
+            Built for Non-Technical Operators
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-justify text-muted-foreground">
-            You don&apos;t need any coding experience. This course is designed for anyone starting from scratch.
+            You do not need a computer science background. This course is for people
+            who want to move faster, validate ideas sooner, and build useful tools
+            without waiting on a full engineering team.
           </p>
         </div>
       </div>
@@ -48,16 +50,18 @@ export function WhoIsThisFor() {
             <Target className="size-8 text-foreground/50" />
             <h3 className="mt-4 text-lg font-semibold">What You&apos;ll Build</h3>
             <ul className="mt-2 space-y-2 text-muted-foreground">
-              <li>AI-powered tools & workflows</li>
-              <li>A monetizable app (website, mobile app)</li>
-              <li>A website showcasing your work/business</li>
+              <li>Internal tools that remove repetitive work</li>
+              <li>Lead-gen, client, or workflow apps you can monetize</li>
+              <li>Simple products you can launch, test, and improve quickly</li>
             </ul>
           </div>
           <div className="rounded-xl border border-border bg-card p-8">
             <Zap className="size-8 text-foreground/50" />
             <h3 className="mt-4 text-lg font-semibold">Why It Matters</h3>
             <p className="mt-2 text-justify text-muted-foreground">
-              Bulletproof yourself from getting replaced by people who know AI. The future belongs to those who can leverage AI tools effectively.
+              The upside is practical: faster execution, lower software costs, and
+              less dependence on scarce technical talent for every small idea or
+              workflow improvement.
             </p>
           </div>
         </div>
