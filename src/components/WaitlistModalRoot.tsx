@@ -53,18 +53,18 @@ export function WaitlistModalRoot() {
   if (!openDetail) return null;
 
   const title = openDetail.planName
-    ? `Save your spot for ${openDetail.planName}`
-    : "Get first access to the course launch";
+    ? `Lock in ${openDetail.planName} at launch pricing`
+    : "Save your spot before enrollment opens";
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4">
       <div className="w-full max-w-lg rounded-2xl border border-border bg-background p-6 text-left shadow-2xl">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <p className="text-sm text-muted-foreground">Join Waitlist</p>
+            <p className="text-sm text-muted-foreground">Limited spots</p>
             <h3 className="mt-1 text-2xl font-semibold">{title}</h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              Leave your email to get first access, launch pricing, and launch updates.
+              Waitlist members get early access + an exclusive launch discount. Takes 10 seconds.
             </p>
           </div>
           <button
@@ -109,7 +109,7 @@ export function WaitlistModalRoot() {
             disabled={waitlistPending}
             className="w-full rounded-xl bg-primary px-6 py-3 font-semibold text-primary-content transition hover:opacity-90 disabled:opacity-50"
           >
-            {waitlistPending ? "Joining..." : "Join Waitlist"}
+            {waitlistPending ? "Saving your spot..." : "Save My Spot"}
           </button>
         </form>
 

@@ -5,13 +5,13 @@ import { Check } from "lucide-react";
 import { WaitlistTrigger } from "@/components/WaitlistTrigger";
 
 const features = [
-  "Full course content",
-  "50+ hands-on projects",
-  "Videos + docs + source code",
-  "Member-exclusive templates included",
-  "Continuous updates",
-  "Q&A group guidance",
+  "150+ video lessons (all under 15 min)",
+  "50+ hands-on projects with source code",
+  "Reusable templates you can ship immediately",
+  "Private WhatsApp Q&A group",
+  "Continuous updates as AI tools evolve",
   "Student-exclusive community",
+  "14-day money-back guarantee",
 ];
 
 const plans = [
@@ -56,11 +56,11 @@ export function PricingSection({ waitlistOnly }: { waitlistOnly: boolean }) {
           {waitlistOnly ? "Waitlist" : "Pricing"}
         </span>
         <h2 className="mt-4 text-3xl font-bold md:text-4xl">
-          {waitlistOnly ? "Join The Waitlist" : "Pricing"}
+          {waitlistOnly ? "Lock In Launch Pricing" : "Pricing"}
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-muted-foreground">
           {waitlistOnly
-            ? "Leave your email to get first access, launch pricing, and the exact date enrollment opens."
+            ? "Waitlist members get first access and the lowest price we'll ever offer. Once enrollment opens, the price goes up."
             : "Choose the plan that fits you and start your AI coding journey today."}
         </p>
 
@@ -129,7 +129,7 @@ export function PricingSection({ waitlistOnly }: { waitlistOnly: boolean }) {
                   source={`pricing_${activePlan.name.toLowerCase().replace(/\s+/g, "_")}`}
                   className="mt-6 w-full rounded-xl bg-foreground px-6 py-3 font-semibold text-background transition hover:bg-foreground/90"
                 >
-                  Join Waitlist
+                  Save My Spot
                 </WaitlistTrigger>
               </div>
 
@@ -152,19 +152,19 @@ export function PricingSection({ waitlistOnly }: { waitlistOnly: boolean }) {
           {waitlistOnly ? (
             <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-border bg-card p-6 text-left shadow-xl">
               <div className="rounded-xl border border-border/60 bg-muted/40 p-4">
-                <p className="text-sm font-medium">What happens next</p>
+                <p className="text-sm font-medium">What waitlist members get</p>
                 <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-center gap-3">
                     <Check className="size-4 shrink-0 text-foreground/50" />
-                    You get launch updates and the opening date first
+                    First access before public enrollment
                   </li>
                   <li className="flex items-center gap-3">
                     <Check className="size-4 shrink-0 text-foreground/50" />
-                    You get first access when enrollment opens
+                    Exclusive launch discount (won&apos;t be offered again)
                   </li>
                   <li className="flex items-center gap-3">
                     <Check className="size-4 shrink-0 text-foreground/50" />
-                    You hear about launch pricing and curriculum updates
+                    Direct updates on launch date and curriculum
                   </li>
                 </ul>
               </div>
@@ -173,7 +173,7 @@ export function PricingSection({ waitlistOnly }: { waitlistOnly: boolean }) {
                 source="landing_page_waitlist"
                 className="mt-6 w-full rounded-xl bg-foreground px-6 py-3 font-semibold text-background transition hover:bg-foreground/90"
               >
-                Join Waitlist
+                Save My Spot →
               </WaitlistTrigger>
             </div>
           ) : (

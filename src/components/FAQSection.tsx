@@ -5,39 +5,34 @@ import { ChevronDown } from "lucide-react"
 
 const faqs = [
   {
-    question: "I have zero coding experience. Can I still learn?",
+    question: "I have zero coding experience. Will I actually be able to build something?",
     answer:
-      "Yes. The course is built for beginners. You follow a project-driven path, learn the minimum you need at each step, and use AI tools to close the gap instead of trying to learn traditional software engineering first.",
+      "Yes — that's exactly who this is for. You won't learn traditional programming. You'll learn how to use AI tools to build real software, step by step. Students with zero background have shipped working apps within the first tier of the course.",
   },
   {
-    question: "What will I be able to do after completing this course?",
+    question: "What can I actually build after this?",
     answer:
-      "You will be able to plan, build, launch, and improve practical software such as internal tools, lead-generation apps, client projects, and simple products you can charge for.",
+      "Real, deployed software: internal tools for your team, lead-generation apps, client dashboards, landing pages, and even SaaS products you can charge money for. Not toy projects — things people use.",
   },
   {
-    question: "Does the course cover the latest AI technologies?",
+    question: "Is the waitlist free? What do I get by joining?",
     answer:
-      "Yes. The course is updated as the tooling changes so the workflows stay current, including modern AI editors, model integrations, and shipping practices.",
+      "Completely free. Waitlist members get first access when enrollment opens, an exclusive launch discount that won't be available later, and direct updates on the course launch date and curriculum.",
   },
-  // {
-  //   question: "How do I start learning after purchasing?",
-  //   answer:
-  //     "After purchasing, you can join the exclusive Whatsapp group and get access to course documents, video tutorials, and source code. Follow the course outline starting from the basics, and ask questions in the group whenever you need help.",
-  // },
-  // {
-  //   question: "How do I join the Q&A group after purchasing?",
-  //   answer:
-  //     "You will receive an email shortly after your purchase with instructions.",
-  // },
-  // {
-  //   question: "What if I'm not satisfied? Can I get a refund?",
-  //   answer:
-  //     "Yes. You have a full 14-day money-back guarantee. If the course isn't what you expected, just reach out and you'll get a full refund — no questions asked.",
-  // },
+  {
+    question: "How is this different from free YouTube tutorials?",
+    answer:
+      "YouTube gives you fragments. This gives you a complete system: 150+ lessons in order, with source code, templates, and a private community for support. You'll go from zero to a launched product without stitching together random tutorials.",
+  },
+  {
+    question: "Will the course stay up to date as AI tools change?",
+    answer:
+      "Yes. The curriculum is continuously updated as the tooling evolves. What you learn stays relevant — and your subscription includes all future updates.",
+  },
   {
     question: "What exactly do I get when I purchase?",
     answer:
-      "You get step-by-step video lessons, complete source code, reusable templates, practical build workflows, community access, and ongoing updates as the AI tooling evolves.",
+      "150+ video lessons (all under 15 minutes), complete source code for every project, reusable templates, a private WhatsApp Q&A group with direct support, and all future updates. Plus a 14-day money-back guarantee.",
   },
 ]
 
@@ -54,9 +49,9 @@ export function FAQSection() {
         <span className="inline-block rounded-full bg-muted px-4 py-1 text-sm">
           FAQ
         </span>
-        <h2 className="mt-4 text-3xl font-bold md:text-4xl">Frequently Asked Questions</h2>
+        <h2 className="mt-4 text-3xl font-bold md:text-4xl">Got Questions?</h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-muted-foreground">
-          Common questions about the course
+          Everything you need to know before joining the waitlist
         </p>
       </div>
 

@@ -71,12 +71,12 @@ export function CoursesSection() {
             </span>
           </div>
           <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-            150+ Videos. 3 Tiers. 1 Clear Build Path.
+            From &quot;I&apos;ve Never Coded&quot; to &quot;I Just Shipped My App&quot;
           </h2>
-          <p className="max-w-2xl text-justify text-muted-foreground">
-            The curriculum is organized so beginners ship first, systemize second,
-            and optimize third. Each lesson is short, practical, and tied to a real
-            business or product outcome.
+          <p className="max-w-2xl text-center text-muted-foreground">
+            150+ lessons organized into 3 tiers. You ship first, polish second,
+            monetize third. Every lesson is under 15 minutes and tied to a real
+            outcome — not theory.
           </p>
         </div>
 
@@ -145,8 +145,7 @@ export function CoursesSection() {
             source="courses_waitlist"
             className="inline-flex items-center gap-2 rounded-full bg-foreground px-8 py-3 font-medium text-background transition-colors hover:bg-foreground/90"
           >
-            Join Waitlist
-            <ExternalLink className="h-4 w-4" />
+            Get Early Access to the Full Curriculum
           </WaitlistTrigger>
         </div>
       </div>

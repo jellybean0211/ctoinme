@@ -50,7 +50,7 @@ export function AuthorSection() {
             priority
           />
         </div>
-        <p className="mb-8 text-justify text-muted-foreground">CTO. Course Creator.</p>
+        <p className="mb-8 text-justify text-muted-foreground">Software engineer. Built 5+ profitable apps with AI. Now teaching the exact workflow.</p>
 
         {/* Social Links */}
         <div className="mb-10 flex flex-wrap gap-3">
@@ -76,16 +76,16 @@ export function AuthorSection() {
 
         {/* Author Bio */}
         <p className="text-justify leading-relaxed text-muted-foreground">
-          I&apos;m a software engineer who builds products with a strong bias toward
-          speed, clarity, and commercial outcomes. I&apos;ve shipped products that
-          generate recurring revenue, and many of them were built with AI coding
-          tools like Cursor and Claude Code.
+          I don&apos;t teach theory — I ship products. Over 8 years in software
+          engineering, I&apos;ve built and launched apps that generate recurring
+          revenue. Most of my recent products were built entirely with AI coding
+          tools like Claude Code and Cursor.
         </p>
         <p className="mt-4 text-justify leading-relaxed text-muted-foreground">
-          This course exists because I&apos;ve seen how much leverage these tools give
-          non-technical people when the workflow is taught properly. I&apos;m not
-          teaching theory. I&apos;m teaching the exact process I use to plan, ship,
-          and improve real products.
+          I built this course because I kept watching smart, capable people —
+          founders, marketers, analysts — get stuck waiting on developers for
+          things they could build themselves in a weekend. This is the system
+          I&apos;d hand them if they sat next to me.
         </p>
 
         {/* Proof */}
@@ -96,7 +96,7 @@ export function AuthorSection() {
           </div>
           <div className="rounded-lg border border-border bg-muted/50 p-4 text-center">
             <p className="text-2xl font-bold">5+</p>
-            <p className="text-sm text-muted-foreground">Profitable apps built over the years</p>
+            <p className="text-sm text-muted-foreground">Profitable apps shipped and running</p>
           </div>
           <div className="rounded-lg border border-border bg-muted/50 p-4 text-center">
             <p className="text-2xl font-bold">20k+</p>

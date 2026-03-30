@@ -6,11 +6,11 @@ export function CTASection({ waitlistOnly }: { waitlistOnly: boolean }) {
     <section className="relative w-full overflow-hidden bg-foreground px-8 py-20 text-background md:py-32">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-3xl font-bold md:text-4xl">
-          {waitlistOnly ? "Want First Access When It Launches?" : "Ready to Build Your First AI Product?"}
+          {waitlistOnly ? "Don't Wait for a Developer. Become the Builder." : "Ready to Build Your First AI Product?"}
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-background/60">
           {waitlistOnly
-            ? "Join the waitlist to get first access, launch pricing, and a clear path from idea to working product."
+            ? "The first cohort is limited. Join the waitlist now to lock in early access and the lowest price we'll ever offer."
             : "Go from zero experience to shipping useful products with AI as your execution layer."}
         </p>
 
@@ -20,7 +20,7 @@ export function CTASection({ waitlistOnly }: { waitlistOnly: boolean }) {
               source="cta_waitlist"
               className="inline-flex items-center justify-center rounded-full bg-background px-8 py-3 font-semibold text-foreground transition hover:bg-background/90"
             >
-              Join Waitlist →
+              Save My Spot →
             </WaitlistTrigger>
           ) : (
             <Link
@@ -34,7 +34,7 @@ export function CTASection({ waitlistOnly }: { waitlistOnly: boolean }) {
 
         <p className="mt-6 text-center text-sm text-background/40">
           {waitlistOnly
-            ? "No spam. Just launch updates, early access, and launch pricing."
+            ? "Free to join. No spam. You'll only hear from us when it matters."
             : "RM499/year, includes all course content and community access. 14-day money-back guarantee."}
         </p>
       </div>

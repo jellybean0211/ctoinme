@@ -21,12 +21,13 @@ export function WhoIsThisFor() {
             Who Is This For
           </span>
           <h2 className="mt-4 text-3xl font-bold md:text-4xl">
-            Built for Non-Technical Operators
+            You Have the Ideas. Now Build Them Yourself.
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-justify text-muted-foreground">
-            You do not need a computer science background. This course is for people
-            who want to move faster, validate ideas sooner, and build useful tools
-            without waiting on a full engineering team.
+            Tired of waiting weeks for a developer to build something you could
+            describe in 5 minutes? This course gives you the skill to go from idea
+            to working app — without a CS degree, a technical co-founder, or a
+            RM10k freelancer budget.
           </p>
         </div>
       </div>
@@ -48,20 +49,20 @@ export function WhoIsThisFor() {
         <div className="mx-auto mt-12 grid max-w-3xl gap-6 md:grid-cols-2">
           <div className="rounded-xl border border-border bg-card p-8">
             <Target className="size-8 text-foreground/50" />
-            <h3 className="mt-4 text-lg font-semibold">What You&apos;ll Build</h3>
+            <h3 className="mt-4 text-lg font-semibold">What You&apos;ll Ship</h3>
             <ul className="mt-2 space-y-2 text-muted-foreground">
-              <li>Internal tools that remove repetitive work</li>
-              <li>Lead-gen, client, or workflow apps you can monetize</li>
-              <li>Simple products you can launch, test, and improve quickly</li>
+              <li>Internal tools that save your team hours every week</li>
+              <li>Lead-gen apps, client dashboards, or workflow tools you can charge for</li>
+              <li>Your own SaaS or product — launched, live, collecting users</li>
             </ul>
           </div>
           <div className="rounded-xl border border-border bg-card p-8">
             <Zap className="size-8 text-foreground/50" />
-            <h3 className="mt-4 text-lg font-semibold">Why It Matters</h3>
+            <h3 className="mt-4 text-lg font-semibold">Why Now</h3>
             <p className="mt-2 text-justify text-muted-foreground">
-              The upside is practical: faster execution, lower software costs, and
-              less dependence on scarce technical talent for every small idea or
-              workflow improvement.
+              AI just made software development 10x more accessible. The people
+              who learn this workflow now will have an unfair advantage over
+              everyone still waiting on developers or paying agencies.
             </p>
           </div>
         </div>
