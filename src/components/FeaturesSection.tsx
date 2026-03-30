@@ -23,8 +23,8 @@ const features = [
   },
   {
     icon: MessageCircle,
-    title: "WeChat Q&A Group",
-    description: "I personally answer questions in the WeChat group to help you solve any issues you encounter while learning.",
+    title: "Whatsapp Q&A Group",
+    description: "I personally answer questions in the Whatsapp group to help you solve any issues you encounter while learning.",
   },
   {
     icon: Star,

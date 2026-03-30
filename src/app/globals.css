@@ -71,27 +71,27 @@
 
 /* Dark theme (used by /ctoinme) */
 .dark {
-  --background: hsl(240 10% 3.9%);
+  --background: hsl(0 0% 5%);
   --foreground: hsl(0 0% 98%);
-  --card: hsl(240 10% 3.9%);
+  --card: hsl(0 0% 5%);
   --card-foreground: hsl(0 0% 98%);
-  --popover: hsl(240 10% 3.9%);
+  --popover: hsl(0 0% 5%);
   --popover-foreground: hsl(0 0% 98%);
-  --primary: hsl(217 91% 60%);
-  --primary-content: hsl(0 0% 98%);
-  --secondary: hsl(240 3.7% 15.9%);
+  --primary: hsl(0 0% 98%);
+  --primary-content: hsl(0 0% 5%);
+  --secondary: hsl(0 0% 15%);
   --secondary-foreground: hsl(0 0% 98%);
-  --muted: hsl(240 3.7% 15.9%);
-  --muted-foreground: hsl(240 5% 64.9%);
-  --accent: hsl(240 3.7% 15.9%);
+  --muted: hsl(0 0% 15%);
+  --muted-foreground: hsl(0 0% 60%);
+  --accent: hsl(0 0% 15%);
   --accent-foreground: hsl(0 0% 98%);
   --destructive: hsl(0 62.8% 30.6%);
-  --border: hsl(240 3.7% 15.9%);
-  --input: hsl(240 3.7% 15.9%);
-  --ring: hsl(217 91% 60%);
-  --base-100: hsl(240 10% 3.9%);
-  --base-200: hsl(240 10% 3.9%);
-  --base-300: hsl(240 5% 10%);
+  --border: hsl(0 0% 15%);
+  --input: hsl(0 0% 15%);
+  --ring: hsl(0 0% 60%);
+  --base-100: hsl(0 0% 5%);
+  --base-200: hsl(0 0% 5%);
+  --base-300: hsl(0 0% 10%);
   --base-content: hsl(0 0% 98%);
   --radius: 1rem;
 }
@@ -108,6 +108,19 @@
 
 .animate-marquee {
   animation: marquee 30s linear infinite;
+}
+
+@keyframes audience-roller {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+.animate-audience-roller {
+  animation: audience-roller 14s linear infinite;
 }
 
 /* Hide scrollbar utility */

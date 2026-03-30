@@ -1,8 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import { CircleCheck } from "lucide-react";
 
-export function HeroSection() {
+export function HeroSection({ waitlistOnly }: { waitlistOnly: boolean }) {
   return (
     <section
       className="relative w-full overflow-hidden px-4 py-20"
@@ -15,71 +14,54 @@ export function HeroSection() {
       <div className="mx-auto max-w-3xl text-center">
         {/* Heading */}
         <h1 className="bg-gradient-to-b from-foreground to-foreground/70 bg-clip-text text-5xl font-bold text-transparent md:text-6xl">
-          Zero to Hero AI Coding Course
+          AI For Everyone
         </h1>
 
         {/* Subtitle */}
         <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-          A hands-on course built around Cursor + Claude Code, designed for complete beginners with no coding experience. Learn by building dozens of real projects — websites, mini-apps, browser extensions, mobile apps, and AI agents. Go from zero to shipping your own applications with AI!
+          A step-by-step video course for complete beginners who want to go from
+          idea to live app with AI. Learn the workflow for planning, designing,
+          building, deploying, and monetizing a real product using plain-language
+          prompts.
         </p>
 
         {/* CTA Buttons */}
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
           <Link
             href="#pricing"
-            className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-medium text-white transition hover:bg-primary/90"
+            className="inline-flex items-center justify-center rounded-full bg-foreground px-8 py-3 text-sm font-medium text-background transition hover:bg-foreground/90"
           >
-            Start AI Coding →
+            {waitlistOnly ? "Join Waitlist →" : "Join The Course →"}
           </Link>
           <Link
             href="#menu"
             className="inline-flex items-center justify-center rounded-full border border-border px-8 py-3 text-sm font-medium text-foreground transition hover:bg-muted"
           >
-            Free Preview
+            Explore The Curriculum
           </Link>
         </div>
 
         {/* Stats */}
         <div className="mt-6 flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
           <span className="flex items-center gap-1.5">
-            <CircleCheck className="size-4 text-green-500" />
-            2300+ Students
+            <CircleCheck className="size-4 text-foreground/50" />
+            150+ videos
           </span>
           <span className="flex items-center gap-1.5">
-            <CircleCheck className="size-4 text-green-500" />
-            599 CNY/year
+            <CircleCheck className="size-4 text-foreground/50" />
+            3 tiers from must-have to advanced
           </span>
           <span className="flex items-center gap-1.5">
-            <CircleCheck className="size-4 text-green-500" />
-            Continuously Updated
+            <CircleCheck className="size-4 text-foreground/50" />
+            Complete beginner to live app
           </span>
         </div>
 
-        {/* Promo line */}
-        <p className="mt-4 text-sm text-muted-foreground">
-          Limited-time offer on Bilibili. Existing students visit:
-          <a
-            href="https://yihui.flowus.cn/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500 underline"
-          >
-            https://yihui.flowus.cn/
-          </a>
-          {" "}View Course
+        {/* Refund guarantee */}
+        <p className="mt-4 text-xs text-muted-foreground/70">
+          Every lesson is under 10 minutes. Full refund within 14 days if it is not
+          the right fit.
         </p>
-      </div>
-
-      {/* Hero image */}
-      <div className="mx-auto mt-12 max-w-5xl overflow-hidden rounded-xl border border-border/40 shadow-2xl">
-        <Image
-          src="/images/hero-video.jpg"
-          alt="Course preview"
-          width={1920}
-          height={1080}
-          className="w-full"
-          priority
-        />
       </div>
     </section>
   );

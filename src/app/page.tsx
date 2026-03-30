@@ -1,31 +1,33 @@
 import { TopBanner } from "@/components/TopBanner";
 import { SiteHeader } from "@/components/SiteHeader";
 import { HeroSection } from "@/components/HeroSection";
+import { WhoIsThisFor } from "@/components/WhoIsThisFor";
 import { CoursesSection } from "@/components/CoursesSection";
-import { ToolsMarquee } from "@/components/ToolsMarquee";
 import { AuthorSection } from "@/components/AuthorSection";
 import { FeaturesSection } from "@/components/FeaturesSection";
-import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { PricingSection } from "@/components/PricingSection";
 import { FAQSection } from "@/components/FAQSection";
 import { CTASection } from "@/components/CTASection";
 import { SiteFooter } from "@/components/SiteFooter";
 
 export default function HomePage() {
+  const waitlistOnly = process.env.WAITLIST_ONLY === "true";
+
   return (
     <div className="flex min-h-[100dvh] flex-col bg-background text-foreground">
-      <TopBanner />
+      <TopBanner waitlistOnly={waitlistOnly} />
       <SiteHeader />
       <main className="flex-1">
-        <HeroSection />
+        <HeroSection waitlistOnly={waitlistOnly} />
+        <WhoIsThisFor />
         <CoursesSection />
-        <ToolsMarquee />
+        {/* <ToolsMarquee /> */}
         <AuthorSection />
         <FeaturesSection />
-        <TestimonialsSection />
-        <PricingSection />
+        {/* <TestimonialsSection /> */}
+        <PricingSection waitlistOnly={waitlistOnly} />
         <FAQSection />
-        <CTASection />
+        <CTASection waitlistOnly={waitlistOnly} />
       </main>
       <SiteFooter />
     </div>

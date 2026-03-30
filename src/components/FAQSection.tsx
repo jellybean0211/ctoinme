@@ -12,12 +12,7 @@ const faqs = [
   {
     question: "What will I be able to do after completing this course?",
     answer:
-      "You'll be able to independently develop a variety of AI-powered applications, including websites, WeChat mini programs, browser extensions, and mobile apps. These skills can be directly applied to your work and personal projects, and you can even take on freelance projects.",
-  },
-  {
-    question: "Why is the course one year instead of lifetime access?",
-    answer:
-      "1. The one-year access period ensures you get maximum value and support, including a full year of Q&A service.\n2. One year is more than enough time to master the core AI coding skills and become capable of developing projects independently.\n3. AI evolves fast — most course content may be outdated after a year, so make the most of this time to learn, ask questions, and start using AI!",
+      "You'll be able to independently develop a variety of AI-powered applications, including websites, mobile apps and workflows. These skills can be directly applied to your work and personal projects, and you can even take on freelance projects.",
   },
   {
     question: "Does the course cover the latest AI technologies?",
@@ -27,22 +22,22 @@ const faqs = [
   {
     question: "How do I start learning after purchasing?",
     answer:
-      "After purchasing, you can join the exclusive WeChat Q&A group and get access to course documents, video tutorials, and source code. Follow the course outline starting from the basics, and ask questions in the group whenever you need help.",
-  },
-  {
-    question: "Can I get an invoice?",
-    answer:
-      "Yes! After purchasing, just contact me with your invoicing details (you can find my contact info on the course homepage). Invoices are typically issued within one business day.",
+      "After purchasing, you can join the exclusive Whatsapp group and get access to course documents, video tutorials, and source code. Follow the course outline starting from the basics, and ask questions in the group whenever you need help.",
   },
   {
     question: "How do I join the Q&A group after purchasing?",
     answer:
-      "Follow the instructions on the course page to join the Q&A group — it will be visible after purchase. Just scan the QR code to join.",
+      "You will receive an email shortly after your purchase with instructions.",
   },
   {
-    question: "Does the teacher personally answer questions?",
+    question: "What if I'm not satisfied? Can I get a refund?",
     answer:
-      "Yes, I personally answer questions in the group. There's also an assistant in the group who can help out during special circumstances (e.g., when I'm traveling) or during events.",
+      "Yes. You have a full 14-day money-back guarantee. If the course isn't what you expected, just reach out and you'll get a full refund — no questions asked.",
+  },
+  {
+    question: "What exactly do I get when I purchase?",
+    answer:
+      "You get: step-by-step video modules covering every project, complete source code and project templates you can use immediately, access to a private community group where I personally answer questions, and continuous updates as new AI tools and techniques emerge.",
   },
 ]
 
