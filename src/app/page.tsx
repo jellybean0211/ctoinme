@@ -10,6 +10,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { CTASection } from "@/components/CTASection";
 import { SiteFooter } from "@/components/SiteFooter";
 import { WaitlistModalRoot } from "@/components/WaitlistModalRoot";
+import { CompaniesSlider } from "@/components/CompaniesSlider";
 
 export default function HomePage() {
   const waitlistOnly = process.env.WAITLIST_ONLY === "true";
@@ -21,6 +22,7 @@ export default function HomePage() {
       <WaitlistModalRoot />
       <main className="flex-1">
         <HeroSection waitlistOnly={waitlistOnly} />
+        <CompaniesSlider />
         <WhoIsThisFor />
         <CoursesSection />
         {/* <ToolsMarquee /> */}
