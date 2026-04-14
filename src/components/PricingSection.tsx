@@ -9,6 +9,8 @@ const included = [
   "Post-workshop follow-up check-ins",
   "HRDF claimable — majority of cost covered",
   "Money-back guarantee on proposed solution",
+  "Trained by engineers who use AI daily — not academics",
+  "Business-focused — only what moves your topline or bottomline",
 ];
 
 export function PricingSection() {
@@ -78,7 +80,7 @@ export function PricingSection() {
             Book a Free Consultation
           </Link>
 
-          <p className="mt-3 text-center text-xs text-muted-foreground/70">
+          <p className="mt-3 text-center text-xs font-semibold text-red-500">
             Q2 2026 slots are filling up. Book now to secure your spot.
           </p>
         </div>

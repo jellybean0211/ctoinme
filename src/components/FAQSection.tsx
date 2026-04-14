@@ -30,6 +30,11 @@ const faqs = [
       "Every workshop is designed with a payback period of under 6 months. We focus exclusively on workflows that directly affect your topline or bottomline — if it doesn't move the needle, it doesn't make it into the training.",
   },
   {
+    question: "How many sessions does a typical engagement take?",
+    answer:
+      "It depends on the scope and goals — which is exactly why we tailor every engagement. The number of sessions will be outlined in your custom proposal after we assess your team's needs. Some companies need a single focused workshop, others benefit from a multi-session program.",
+  },
+  {
     question: "What if we don't like the proposed workshop?",
     answer:
       "We offer a money-back guarantee on the proposed solution. After we assess your team and present the workshop plan, if you're not satisfied with the approach, you don't pay. We only proceed when you're confident in the value.",

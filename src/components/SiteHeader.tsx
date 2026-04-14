@@ -7,8 +7,8 @@ import { cn } from "@/lib/utils";
 
 const navLinks = [
   { label: "Home", href: "/" },
+  { label: "Results", href: "#results" },
   { label: "Process", href: "#process" },
-  { label: "Why Us", href: "#features" },
   { label: "About", href: "#author" },
   { label: "FAQ", href: "#faq" },
 ];
@@ -46,7 +46,7 @@ export function SiteHeader() {
             href="#contact"
             className="hidden rounded-lg bg-primary px-3 py-1.5 text-sm font-medium text-primary-content transition hover:bg-primary/90 md:inline-flex"
           >
-            Book a Consultation
+            Book a Free Consultation
           </Link>
 
           {/* Mobile menu button */}
@@ -84,7 +84,7 @@ export function SiteHeader() {
             className="mt-1 rounded-md bg-primary px-3 py-2 text-center text-sm font-medium text-primary-content transition hover:bg-primary/90"
             onClick={() => setMobileOpen(false)}
           >
-            Book a Consultation
+            Book a Free Consultation
           </Link>
         </div>
       </nav>
