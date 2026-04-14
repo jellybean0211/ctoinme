@@ -38,10 +38,10 @@ export function HeroSection() {
             Book a Free Consultation
           </Link>
           <Link
-            href="#process"
+            href="#results"
             className="inline-flex items-center justify-center rounded-full border border-border px-8 py-3 text-sm font-medium text-foreground transition hover:bg-muted"
           >
-            See How It Works
+            See Real Results
           </Link>
         </div>
 
@@ -64,7 +64,7 @@ export function HeroSection() {
         {/* Guarantee */}
         <p className="mt-4 text-center text-xs text-muted-foreground/70">
           Money-back guarantee if you don&apos;t like the solution proposed. No
-          generic advice — only what moves your bottom line.
+          generic advice — only what moves your top and bottom line.
         </p>
       </div>
     </section>

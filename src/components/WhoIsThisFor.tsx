@@ -52,7 +52,7 @@ export function WhoIsThisFor() {
           <div className="rounded-xl border border-border bg-card p-8">
             <Target className="size-8 text-foreground/50" />
             <h3 className="mt-4 text-lg font-semibold">What Your Team Will Gain</h3>
-            <ul className="mt-2 space-y-2 text-muted-foreground">
+            <ul className="mt-2 list-disc space-y-2 pl-5 text-muted-foreground">
               <li>Practical AI workflows that save hours every week</li>
               <li>Confidence to use AI tools for real business decisions</li>
               <li>A shared language and framework for AI adoption across departments</li>
@@ -61,12 +61,11 @@ export function WhoIsThisFor() {
           <div className="rounded-xl border border-border bg-card p-8">
             <Zap className="size-8 text-foreground/50" />
             <h3 className="mt-4 text-lg font-semibold">The Cost of Waiting</h3>
-            <p className="mt-2 text-justify text-muted-foreground">
-              Every week your team spends doing manually what AI can do in
-              minutes is money you&apos;re burning. Your competitors aren&apos;t
-              waiting. The companies that train now will set the pace — the
-              rest will spend the next two years trying to catch up.
-            </p>
+            <ul className="mt-2 list-disc space-y-2 pl-5 text-muted-foreground">
+              <li>Every week doing manually what AI can do in minutes is money burned</li>
+              <li>Your competitors aren&apos;t waiting — they&apos;re already training</li>
+              <li>Companies that act now set the pace; the rest spend years catching up</li>
+            </ul>
           </div>
         </div>
       </div>

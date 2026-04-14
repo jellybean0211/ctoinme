@@ -5,7 +5,6 @@ import { WhoIsThisFor } from "@/components/WhoIsThisFor";
 import { ProcessSection } from "@/components/ProcessSection";
 import { AuthorSection } from "@/components/AuthorSection";
 import { CaseStudiesSection } from "@/components/CaseStudiesSection";
-import { FeaturesSection } from "@/components/FeaturesSection";
 import { PricingSection } from "@/components/PricingSection";
 import { FAQSection } from "@/components/FAQSection";
 import { CTASection } from "@/components/CTASection";
@@ -21,10 +20,9 @@ export default function HomePage() {
         <HeroSection />
         <CompaniesSlider />
         <WhoIsThisFor />
-        <ProcessSection />
         <CaseStudiesSection />
+        <ProcessSection />
         <AuthorSection />
-        <FeaturesSection />
         <PricingSection />
         <FAQSection />
         <CTASection />

@@ -50,7 +50,7 @@ export function AuthorSection() {
             priority
           />
         </div>
-        <p className="mb-8 text-justify text-muted-foreground">CTO of a software house with 5 engineers. I&apos;ve spent my career turning technology into ROI — and now I train companies to do the same with AI.</p>
+        <p className="mb-8 text-justify text-muted-foreground">CTO of a software house. I&apos;ve spent my career turning technology into ROI — and now I train companies to do the same with AI.</p>
 
         {/* Social Links */}
         <div className="mb-10 flex flex-wrap gap-3">
@@ -85,10 +85,11 @@ export function AuthorSection() {
           week.&quot;
         </p>
         <p className="mt-4 text-justify leading-relaxed text-muted-foreground">
-          I built CTO in Me because I kept seeing the same pattern: companies
-          spending on AI tools but getting no ROI because their people
-          weren&apos;t trained to use them. I teach what I do on a daily basis
-          — no textbook theory, just real workflows that move the needle.
+          The results above? Those are the kinds of outcomes I help companies
+          achieve. I built CTO in Me because I kept seeing the same pattern:
+          companies spending on AI tools but getting no ROI because their
+          people weren&apos;t trained to use them. I teach what I do on a daily
+          basis — no textbook theory, just real workflows that move the needle.
         </p>
 
         {/* Proof */}
@@ -103,7 +104,7 @@ export function AuthorSection() {
           </div>
           <div className="rounded-lg border border-border bg-muted/50 p-4 text-center">
             <p className="text-2xl font-bold">Millions</p>
-            <p className="text-sm text-muted-foreground">Users powered by apps I&apos;ve built</p>
+            <p className="text-sm text-muted-foreground">Poeple impacted by AI I&apos;ve built</p>
           </div>
         </div>
 
