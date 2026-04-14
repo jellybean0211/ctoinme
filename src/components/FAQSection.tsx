@@ -5,34 +5,34 @@ import { ChevronDown } from "lucide-react"
 
 const faqs = [
   {
-    question: "I have zero coding experience. Will I actually be able to build something?",
+    question: "What is HRDF and how does it reduce our cost?",
     answer:
-      "Yes — that's exactly who this is for. You won't learn traditional programming. You'll learn how to use AI tools to build real software, step by step. Students with zero background have shipped working apps within the first tier of the course.",
+      "HRDF (Human Resources Development Fund) is a levy paid by Malaysian employers. Companies that contribute to the levy can claim training costs back. Our workshops are HRDF-certified, which means the majority of the cost is covered — making this one of the most cost-effective ways to upskill your team.",
   },
   {
-    question: "What can I actually build after this?",
+    question: "How is this different from generic AI training programs?",
     answer:
-      "Real, deployed software: internal tools for your team, lead-generation apps, client dashboards, landing pages, and even SaaS products you can charge money for. Not toy projects — things people use.",
+      "Most AI training programs teach generic prompting tips anyone can find on YouTube. We start by interviewing your employees, identifying their specific bottlenecks, and designing a workshop around those real problems. Your team walks out with workflows they can apply the next day — not abstract knowledge.",
   },
   {
-    question: "Is the waitlist free? What do I get by joining?",
+    question: "What size companies do you work with?",
     answer:
-      "Completely free. Waitlist members get first access when enrollment opens, an exclusive launch discount that won't be available later, and direct updates on the course launch date and curriculum.",
+      "We work best with medium-sized companies — large enough to have an HRDF levy to utilize, but nimble enough to implement changes quickly. That said, we're open to conversations with companies of any size if the fit is right.",
   },
   {
-    question: "How is this different from free YouTube tutorials?",
+    question: "Do our employees need technical backgrounds?",
     answer:
-      "YouTube gives you fragments. This gives you a complete system: 150+ lessons in order, with source code, templates, and a private community for support. You'll go from zero to a launched product without stitching together random tutorials.",
+      "Not at all. Our workshops are designed for non-technical teams — operations, marketing, sales, finance, HR. We teach practical AI skills that anyone can pick up, regardless of their technical background.",
   },
   {
-    question: "Will the course stay up to date as AI tools change?",
+    question: "What's the ROI on this training?",
     answer:
-      "Yes. The curriculum is continuously updated as the tooling evolves. What you learn stays relevant — and your subscription includes all future updates.",
+      "Every workshop is designed with a payback period of under 6 months. We focus exclusively on workflows that directly affect your topline or bottomline — if it doesn't move the needle, it doesn't make it into the training.",
   },
   {
-    question: "What exactly do I get when I purchase?",
+    question: "What if we don't like the proposed workshop?",
     answer:
-      "150+ video lessons (all under 15 minutes), complete source code for every project, reusable templates, a private WhatsApp Q&A group with direct support, and all future updates. Plus a 14-day money-back guarantee.",
+      "We offer a money-back guarantee on the proposed solution. After we assess your team and present the workshop plan, if you're not satisfied with the approach, you don't pay. We only proceed when you're confident in the value.",
   },
 ]
 
@@ -51,7 +51,7 @@ export function FAQSection() {
         </span>
         <h2 className="mt-4 text-3xl font-bold md:text-4xl">Got Questions?</h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-muted-foreground">
-          Everything you need to know before joining the waitlist
+          Everything you need to know before booking a consultation
         </p>
       </div>
 
