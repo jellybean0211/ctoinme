@@ -5,12 +5,13 @@ export function CTASection() {
     <section id="contact" className="relative w-full overflow-hidden bg-foreground px-8 py-20 text-background md:py-32">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="text-3xl font-bold md:text-4xl">
-          Ready to Unlock Your Team&apos;s Potential?
+          Every Month You Wait, Your Competitors Pull Further Ahead
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-background/60">
-          Book a free, no-obligation consultation. We&apos;ll assess your
-          team&apos;s needs, discuss how AI can impact your bottom line, and
-          only move forward if it&apos;s the right fit.
+          The companies investing in AI training today will dominate
+          tomorrow. Book a free consultation — we&apos;ll show you exactly
+          where AI can save your team time and money, and build a workshop
+          around it.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">

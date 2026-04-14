@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, Moon, Sun, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
@@ -42,16 +42,6 @@ export function SiteHeader() {
 
         {/* Right side */}
         <div className="flex items-center gap-2">
-          {/* Theme toggle (decorative) */}
-          <button
-            type="button"
-            className="inline-flex size-8 items-center justify-center rounded-lg text-muted-foreground transition hover:text-foreground"
-            aria-label="Toggle theme"
-          >
-            <Sun className="size-4 dark:hidden" />
-            <Moon className="hidden size-4 dark:block" />
-          </button>
-
           <Link
             href="#contact"
             className="hidden rounded-lg bg-primary px-3 py-1.5 text-sm font-medium text-primary-content transition hover:bg-primary/90 md:inline-flex"

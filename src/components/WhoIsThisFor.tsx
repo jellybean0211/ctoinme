@@ -22,13 +22,13 @@ export function WhoIsThisFor() {
             Who Is This For
           </span>
           <h2 className="mt-4 text-3xl font-bold md:text-4xl">
-            For Companies Ready to Work Smarter With AI
+            The Companies That Don&apos;t Train Will Get Left Behind
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-center text-muted-foreground">
-            Your competitors are already using AI to cut costs and move faster.
-            The gap between companies that train their people on AI and those
-            that don&apos;t will only widen. We help medium-sized companies close
-            that gap — fast.
+            AI isn&apos;t coming — it&apos;s here. Your competitors are already
+            using it to cut costs, move faster, and do more with fewer people.
+            Every month you wait, the gap widens. The question isn&apos;t whether
+            to train your team — it&apos;s whether you can afford not to.
           </p>
         </div>
       </div>
@@ -59,12 +59,12 @@ export function WhoIsThisFor() {
           </div>
           <div className="rounded-xl border border-border bg-card p-8">
             <Zap className="size-8 text-foreground/50" />
-            <h3 className="mt-4 text-lg font-semibold">Why Now</h3>
+            <h3 className="mt-4 text-lg font-semibold">The Cost of Waiting</h3>
             <p className="mt-2 text-justify text-muted-foreground">
-              AI is evolving fast. Companies that invest in upskilling their
-              teams today will outpace those still figuring it out next year.
-              The ROI on training your people now compounds — every month you
-              wait is productivity left on the table.
+              Every week your team spends doing manually what AI can do in
+              minutes is money you&apos;re burning. Your competitors aren&apos;t
+              waiting. The companies that train now will set the pace — the
+              rest will spend the next two years trying to catch up.
             </p>
           </div>
         </div>

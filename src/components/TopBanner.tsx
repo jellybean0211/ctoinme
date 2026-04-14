@@ -4,7 +4,7 @@ export function TopBanner() {
   return (
     <div className="flex w-full min-h-14 items-center justify-center gap-4 bg-foreground px-4 py-2 text-center">
       <p className="text-sm font-medium text-background">
-        HRDF-certified AI training for your team. Tailored. Practical. ROI-driven.
+        Your competitors are already upskilling with AI. Don&apos;t get left behind.
       </p>
       <Link
         href="#contact"
