@@ -50,7 +50,7 @@ export function AuthorSection() {
             priority
           />
         </div>
-        <p className="mb-8 text-justify text-muted-foreground">CTO of a software house. I&apos;ve spent my career turning technology into ROI — and now I train companies to do the same with AI.</p>
+        <p className="mb-8 text-justify text-muted-foreground">CTO of a software house with 5 engineers. I&apos;ve spent my career turning technology into ROI — and now I train companies to do the same with AI.</p>
 
         {/* Social Links */}
         <div className="mb-10 flex flex-wrap gap-3">

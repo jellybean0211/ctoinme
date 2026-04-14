@@ -14,19 +14,19 @@ export function HeroSection() {
       <div className="mx-auto max-w-3xl text-center">
         {/* Heading */}
         <h1 className="bg-gradient-to-b from-foreground to-foreground/70 bg-clip-text text-5xl font-bold text-transparent md:text-6xl">
-          Unlock 10x Value From Your Team With AI
+          Your Competitors Are Already Training Their Teams on AI
         </h1>
 
         <h2 className="mt-4 text-2xl font-semibold text-muted-foreground">
-          HRDF-Certified Corporate Training
+          Are You?
         </h2>
 
         {/* Subtitle */}
         <p className="mx-auto mt-6 max-w-2xl text-center text-lg text-muted-foreground">
-          Your employees use AI every day — but are they using it to move the
-          needle? We deliver tailored, in-person workshops that teach your team
-          how to solve real business problems with AI. Engineered for ROI, not
-          theory.
+          Right now, your employees are either ignoring AI entirely or using it
+          without direction — costing you time, money, and competitive edge. We
+          deliver tailored, in-person workshops that turn your team into an
+          AI-powered workforce. HRDF certified. ROI in under 6 months.
         </p>
 
         {/* CTA Buttons */}
