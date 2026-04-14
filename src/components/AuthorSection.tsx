@@ -38,7 +38,7 @@ export function AuthorSection() {
       <div className="mx-auto max-w-4xl">
         {/* Heading */}
         <h2 className="mb-4 text-3xl font-bold md:text-4xl">
-          Hello! I&apos;m Preston.
+          Your Trainer
         </h2>
         <div className="mb-6">
           <Image
@@ -50,7 +50,7 @@ export function AuthorSection() {
             priority
           />
         </div>
-        <p className="mb-8 text-justify text-muted-foreground">Software engineer. Built 5+ profitable apps with AI. Now teaching the exact workflow.</p>
+        <p className="mb-8 text-justify text-muted-foreground">CTO of a software house. I&apos;ve spent my career turning technology into ROI — and now I train companies to do the same with AI.</p>
 
         {/* Social Links */}
         <div className="mb-10 flex flex-wrap gap-3">
@@ -76,16 +76,18 @@ export function AuthorSection() {
 
         {/* Author Bio */}
         <p className="text-justify leading-relaxed text-muted-foreground">
-          I don&apos;t teach theory — I ship products. Over 8 years in software
-          engineering, I&apos;ve built and launched apps that generate recurring
-          revenue. Most of my recent products were built entirely with AI coding
-          tools like Claude Code and Cursor.
+          I&apos;ve engineered apps that powered millions of users with AI —
+          solving actually hard problems, not toy demos. Over 8+ years in
+          software engineering, I&apos;ve trained and mentored 30+ software
+          engineers into senior leadership roles. I know what it takes to get
+          people from &quot;I don&apos;t get AI&quot; to &quot;this just saved
+          me 10 hours a week.&quot;
         </p>
         <p className="mt-4 text-justify leading-relaxed text-muted-foreground">
-          I built this course because I kept watching smart, capable people —
-          founders, marketers, analysts — get stuck waiting on developers for
-          things they could build themselves in a weekend. This is the system
-          I&apos;d hand them if they sat next to me.
+          I built CTO in Me because I kept seeing the same pattern: companies
+          spending on AI tools but getting no ROI because their people
+          weren&apos;t trained to use them. I teach what I do on a daily basis
+          — no textbook theory, just real workflows that move the needle.
         </p>
 
         {/* Proof */}
@@ -95,14 +97,21 @@ export function AuthorSection() {
             <p className="text-sm text-muted-foreground">Years in software engineering</p>
           </div>
           <div className="rounded-lg border border-border bg-muted/50 p-4 text-center">
-            <p className="text-2xl font-bold">5+</p>
-            <p className="text-sm text-muted-foreground">Profitable apps shipped and running</p>
+            <p className="text-2xl font-bold">30+</p>
+            <p className="text-sm text-muted-foreground">Engineers trained into senior roles</p>
           </div>
           <div className="rounded-lg border border-border bg-muted/50 p-4 text-center">
-            <p className="text-2xl font-bold">20k+</p>
-            <p className="text-sm text-muted-foreground">Followers across social platforms</p>
+            <p className="text-2xl font-bold">Millions</p>
+            <p className="text-sm text-muted-foreground">Users powered by apps I&apos;ve built</p>
           </div>
         </div>
+
+        {/* Hint at growing team */}
+        <p className="mt-6 text-sm text-muted-foreground/70">
+          As demand grows, we&apos;re expanding our roster of trainers — all
+          practitioners, all engineers who use AI to ship real products every
+          day.
+        </p>
       </div>
     </section>
   );

@@ -1,45 +1,17 @@
-"use client";
-
-import { useState } from "react";
+import Link from "next/link";
 import { Check } from "lucide-react";
-import { WaitlistTrigger } from "@/components/WaitlistTrigger";
 
-const features = [
-  "150+ video lessons (all under 15 min)",
-  "50+ hands-on projects with source code",
-  "Reusable templates you can ship immediately",
-  "Private WhatsApp Q&A group",
-  "Continuous updates as AI tools evolve",
-  "Student-exclusive community",
-  "14-day money-back guarantee",
+const included = [
+  "Free onboarding consultation",
+  "Employee touchpoints and bottleneck analysis",
+  "Custom workshop proposal tailored to your team",
+  "In-person, hands-on training sessions",
+  "Post-workshop follow-up check-ins",
+  "HRDF claimable — majority of cost covered",
+  "Money-back guarantee on proposed solution",
 ];
 
-const plans = [
-  {
-    id: "6month" as const,
-    name: "6 Month",
-    price: "RM399",
-    period: "/6 months",
-    monthlyPrice: "RM66.50/mo",
-    description: "Get started with full access for half a year",
-    badge: "Shorter commitment",
-  },
-  {
-    id: "1year" as const,
-    name: "1 Year",
-    price: "RM499",
-    period: "/year",
-    monthlyPrice: "RM41.58/mo",
-    compareAt: "RM66.50/mo",
-    description: "Complete hands-on AI coding course, from zero to mastery",
-    badge: "Best Value",
-  },
-];
-
-export function PricingSection({ waitlistOnly }: { waitlistOnly: boolean }) {
-  const [activePlanId, setActivePlanId] = useState<(typeof plans)[number]["id"]>("1year");
-  const activePlan = plans.find((plan) => plan.id === activePlanId) ?? plans[1];
-
+export function PricingSection() {
   return (
     <section
       id="pricing"
@@ -51,139 +23,42 @@ export function PricingSection({ waitlistOnly }: { waitlistOnly: boolean }) {
         backgroundSize: "40px 40px",
       }}
     >
-      <div className="mx-auto max-w-5xl text-center">
+      <div className="mx-auto max-w-3xl text-center">
         <span className="inline-block rounded-full bg-muted px-4 py-1 text-sm">
-          {waitlistOnly ? "Waitlist" : "Pricing"}
+          Get Started
         </span>
         <h2 className="mt-4 text-3xl font-bold md:text-4xl">
-          {waitlistOnly ? "Lock In Launch Pricing" : "Pricing"}
+          Every Engagement Is Custom
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-muted-foreground">
-          {waitlistOnly
-            ? "Waitlist members get first access and the lowest price we'll ever offer. Once enrollment opens, the price goes up."
-            : "Choose the plan that fits you and start your AI coding journey today."}
+          Because no two companies have the same problems, we don&apos;t
+          believe in one-size-fits-all pricing. Book a free consultation and
+          we&apos;ll scope the right program for your team.
         </p>
 
-        <>
-          <div className="mx-auto mt-12 flex w-fit rounded-2xl bg-muted/50 p-2">
-            <div className="grid grid-cols-2 gap-2">
-              {plans.map((plan) => {
-                const isActive = plan.id === activePlanId;
-                return (
-                  <button
-                    key={plan.id}
-                    type="button"
-                    onClick={() => setActivePlanId(plan.id)}
-                    className={`rounded-xl px-4 py-3 text-left transition ${
-                      isActive
-                        ? "bg-background shadow-sm"
-                        : "text-muted-foreground hover:bg-background/60"
-                    }`}
-                  >
-                    <div className="flex items-center justify-between gap-2">
-                      <span className="text-sm font-semibold">{plan.name}</span>
-                      <span className="rounded-full border border-border/60 px-2 py-0.5 text-[10px] uppercase tracking-wide">
-                        {plan.id === "1year" ? "Default" : "Option"}
-                      </span>
-                    </div>
-                    <p className="mt-1 text-sm">{plan.price}</p>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
+        <div className="mx-auto mt-12 max-w-xl rounded-3xl border border-border bg-card p-6 text-left shadow-xl md:p-8">
+          <h3 className="text-xl font-bold">What&apos;s Included</h3>
+          <ul className="mt-6 space-y-3">
+            {included.map((item) => (
+              <li key={item} className="flex items-center gap-3">
+                <Check className="size-5 shrink-0 text-foreground/50" />
+                <span className="text-sm">{item}</span>
+              </li>
+            ))}
+          </ul>
 
-          <div className="mx-auto mt-6 max-w-3xl rounded-3xl border border-border bg-card p-4 text-left shadow-xl md:p-8">
-            <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
-              <div className="max-w-xl">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="rounded-full bg-foreground px-3 py-1 text-xs text-background">
-                    {activePlan.badge}
-                  </span>
-                  {activePlan.id === "1year" ? (
-                    <span className="rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-300">
-                      37.5% cheaper
-                    </span>
-                  ) : null}
-                </div>
-                <h3 className="mt-4 text-2xl font-bold">{activePlan.name}</h3>
-                <p className="mt-2 text-muted-foreground">{activePlan.description}</p>
-              </div>
-            </div>
+          <Link
+            href="#contact"
+            className="mt-8 flex w-full items-center justify-center rounded-xl bg-foreground px-6 py-3 font-semibold text-background transition hover:bg-foreground/90"
+          >
+            Book a Free Consultation
+          </Link>
+        </div>
 
-            <div className="mt-8 grid gap-6 md:grid-cols-[1.1fr_0.9fr]">
-              <div className="rounded-2xl bg-background/70 p-6">
-                <div className="flex items-end gap-2">
-                  <span className="text-5xl font-bold">{activePlan.price}</span>
-                  <span className="pb-1 text-lg text-muted-foreground">{activePlan.period}</span>
-                </div>
-                <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1">
-                  <span className="text-sm font-medium text-muted-foreground">{activePlan.monthlyPrice}</span>
-                  {activePlan.compareAt ? (
-                    <span className="text-sm text-muted-foreground line-through">{activePlan.compareAt}</span>
-                  ) : null}
-                </div>
-
-                <WaitlistTrigger
-                  planName={activePlan.name}
-                  source={`pricing_${activePlan.name.toLowerCase().replace(/\s+/g, "_")}`}
-                  className="mt-6 w-full rounded-xl bg-foreground px-6 py-3 font-semibold text-background transition hover:bg-foreground/90"
-                >
-                  Save My Spot
-                </WaitlistTrigger>
-              </div>
-
-              <div className="rounded-2xl border border-border/60 bg-muted/40 p-6">
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground/70">
-                  Included
-                </p>
-                <ul className="mt-4 space-y-3 text-left">
-                  {features.map((feature) => (
-                    <li key={feature} className="flex items-center gap-3">
-                      <Check className="size-5 shrink-0 text-foreground/50" />
-                      <span className="text-sm">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {waitlistOnly ? (
-            <div className="mx-auto mt-8 max-w-2xl rounded-2xl border border-border bg-card p-6 text-left shadow-xl">
-              <div className="rounded-xl border border-border/60 bg-muted/40 p-4">
-                <p className="text-sm font-medium">What waitlist members get</p>
-                <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
-                  <li className="flex items-center gap-3">
-                    <Check className="size-4 shrink-0 text-foreground/50" />
-                    First access before public enrollment
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <Check className="size-4 shrink-0 text-foreground/50" />
-                    Exclusive launch discount (won&apos;t be offered again)
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <Check className="size-4 shrink-0 text-foreground/50" />
-                    Direct updates on launch date and curriculum
-                  </li>
-                </ul>
-              </div>
-
-              <WaitlistTrigger
-                source="landing_page_waitlist"
-                className="mt-6 w-full rounded-xl bg-foreground px-6 py-3 font-semibold text-background transition hover:bg-foreground/90"
-              >
-                Save My Spot →
-              </WaitlistTrigger>
-            </div>
-          ) : (
-            <p className="mt-8 text-sm text-muted-foreground">
-              14-day money-back guarantee. If you&apos;re not satisfied, you get a full refund — no
-              questions asked.
-            </p>
-          )}
-        </>
-
+        <p className="mt-6 text-sm text-muted-foreground">
+          No commitment required. We&apos;ll discuss your goals, assess fit,
+          and only proceed if it makes sense for both sides.
+        </p>
       </div>
     </section>
   );
