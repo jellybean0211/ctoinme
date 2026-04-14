@@ -4,6 +4,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { WhoIsThisFor } from "@/components/WhoIsThisFor";
 import { ProcessSection } from "@/components/ProcessSection";
 import { AuthorSection } from "@/components/AuthorSection";
+import { CaseStudiesSection } from "@/components/CaseStudiesSection";
 import { FeaturesSection } from "@/components/FeaturesSection";
 import { PricingSection } from "@/components/PricingSection";
 import { FAQSection } from "@/components/FAQSection";
@@ -21,6 +22,7 @@ export default function HomePage() {
         <CompaniesSlider />
         <WhoIsThisFor />
         <ProcessSection />
+        <CaseStudiesSection />
         <AuthorSection />
         <FeaturesSection />
         <PricingSection />
