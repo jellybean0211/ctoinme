@@ -42,12 +42,14 @@ export function SiteHeader() {
 
         {/* Right side */}
         <div className="flex items-center gap-2">
-          <Link
-            href="#contact"
+          <a
+            href="https://wa.me/60127760887"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden rounded-lg bg-primary px-3 py-1.5 text-sm font-medium text-primary-content transition hover:bg-primary/90 md:inline-flex"
           >
             Book a Free Consultation
-          </Link>
+          </a>
 
           {/* Mobile menu button */}
           <button
@@ -79,13 +81,15 @@ export function SiteHeader() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="#contact"
+          <a
+            href="https://wa.me/60127760887"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-1 rounded-md bg-primary px-3 py-2 text-center text-sm font-medium text-primary-content transition hover:bg-primary/90"
             onClick={() => setMobileOpen(false)}
           >
             Book a Free Consultation
-          </Link>
+          </a>
         </div>
       </nav>
     </header>

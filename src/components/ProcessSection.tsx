@@ -85,7 +85,9 @@ export function ProcessSection() {
 
         <div className="mt-12 flex justify-center">
           <Link
-            href="#contact"
+            href="https://wa.me/60127760887"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-foreground px-8 py-3 font-medium text-background transition-colors hover:bg-foreground/90"
           >
             Start With a Free Consultation

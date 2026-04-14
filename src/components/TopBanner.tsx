@@ -7,7 +7,9 @@ export function TopBanner() {
         Q2 2026 slots are filling up. Your competitors are already upskilling with AI.
       </p>
       <Link
-        href="#contact"
+        href="https://wa.me/60127760887"
+        target="_blank"
+        rel="noopener noreferrer"
         className="inline-flex shrink-0 items-center justify-center rounded-full border border-white/20 bg-background px-4 py-1.5 text-sm font-medium text-foreground transition hover:bg-background/90"
       >
         Book a Free Consultation
