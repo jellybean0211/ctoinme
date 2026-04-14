@@ -74,7 +74,9 @@ export function PricingSection() {
           </ul>
 
           <Link
-            href="#contact"
+            href="https://wa.me/60127760887"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-8 flex w-full items-center justify-center rounded-xl bg-foreground px-6 py-3 font-semibold text-background transition hover:bg-foreground/90"
           >
             Book a Free Consultation
