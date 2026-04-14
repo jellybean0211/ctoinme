@@ -1,14 +1,15 @@
 import { Target, Zap } from "lucide-react"
 
 const audienceRoles = [
-  "Operations Teams",
-  "Marketing Teams",
-  "Sales Teams",
-  "Finance Teams",
-  "HR Departments",
-  "Product Teams",
+  "Legal",
+  "Engineering",
+  "Marketing",
+  "Sales",
+  "Operations",
+  "Finance",
+  "HR",
+  "Product",
   "Customer Support",
-  "Engineering Teams",
 ]
 
 const audienceTrack = [...audienceRoles, ...audienceRoles, ...audienceRoles]

@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { Check } from "lucide-react";
+import { Check, Clock, Users, MapPin } from "lucide-react";
 
 const included = [
   "Free onboarding consultation",
   "Employee touchpoints and bottleneck analysis",
   "Custom workshop proposal tailored to your team",
-  "In-person, hands-on training sessions",
+  "In-person or online training sessions",
   "Post-workshop follow-up check-ins",
   "HRDF claimable — majority of cost covered",
   "Money-back guarantee on proposed solution",
@@ -36,8 +36,32 @@ export function PricingSection() {
           we&apos;ll scope the right program for your team.
         </p>
 
-        <div className="mx-auto mt-12 max-w-xl rounded-3xl border border-border bg-card p-6 text-left shadow-xl md:p-8">
-          <h3 className="text-xl font-bold">What&apos;s Included</h3>
+        {/* Workshop Format */}
+        <div className="mx-auto mt-10 grid max-w-xl grid-cols-3 gap-4">
+          <div className="rounded-xl border border-border bg-card p-4 text-center">
+            <MapPin className="mx-auto size-5 text-muted-foreground" />
+            <p className="mt-2 text-sm font-semibold">Online or Physical</p>
+            <p className="text-xs text-muted-foreground">Wherever works for your team</p>
+          </div>
+          <div className="rounded-xl border border-border bg-card p-4 text-center">
+            <Users className="mx-auto size-5 text-muted-foreground" />
+            <p className="mt-2 text-sm font-semibold">10 – 50 pax</p>
+            <p className="text-xs text-muted-foreground">Ideal group size</p>
+          </div>
+          <div className="rounded-xl border border-border bg-card p-4 text-center">
+            <Clock className="mx-auto size-5 text-muted-foreground" />
+            <p className="mt-2 text-sm font-semibold">2 hours max</p>
+            <p className="text-xs text-muted-foreground">Per session</p>
+          </div>
+        </div>
+
+        <div className="mx-auto mt-8 max-w-xl rounded-3xl border border-border bg-card p-6 text-left shadow-xl md:p-8">
+          <div className="flex flex-wrap items-baseline gap-3">
+            <h3 className="text-xl font-bold">What&apos;s Included</h3>
+            <span className="text-sm text-muted-foreground">
+              Starting from <span className="font-semibold text-foreground">RM5,000</span>
+            </span>
+          </div>
           <ul className="mt-6 space-y-3">
             {included.map((item) => (
               <li key={item} className="flex items-center gap-3">
@@ -53,6 +77,10 @@ export function PricingSection() {
           >
             Book a Free Consultation
           </Link>
+
+          <p className="mt-3 text-center text-xs text-muted-foreground/70">
+            Q2 2026 slots are filling up. Book now to secure your spot.
+          </p>
         </div>
 
         <p className="mt-6 text-sm text-muted-foreground">

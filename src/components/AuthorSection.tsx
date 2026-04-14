@@ -78,10 +78,11 @@ export function AuthorSection() {
         <p className="text-justify leading-relaxed text-muted-foreground">
           I&apos;ve engineered apps that powered millions of users with AI —
           solving actually hard problems, not toy demos. Over 8+ years in
-          software engineering, I&apos;ve trained and mentored 30+ software
-          engineers into senior leadership roles. I know what it takes to get
-          people from &quot;I don&apos;t get AI&quot; to &quot;this just saved
-          me 10 hours a week.&quot;
+          software engineering, I&apos;ve trained and mentored 30+ professionals
+          — software engineers, marketers, civil engineers, accountants — into
+          senior roles. I know what it takes to get people from &quot;I
+          don&apos;t get AI&quot; to &quot;this just saved me 10 hours a
+          week.&quot;
         </p>
         <p className="mt-4 text-justify leading-relaxed text-muted-foreground">
           I built CTO in Me because I kept seeing the same pattern: companies
@@ -98,7 +99,7 @@ export function AuthorSection() {
           </div>
           <div className="rounded-lg border border-border bg-muted/50 p-4 text-center">
             <p className="text-2xl font-bold">30+</p>
-            <p className="text-sm text-muted-foreground">Engineers trained into senior roles</p>
+            <p className="text-sm text-muted-foreground">Professionals trained into senior roles</p>
           </div>
           <div className="rounded-lg border border-border bg-muted/50 p-4 text-center">
             <p className="text-2xl font-bold">Millions</p>

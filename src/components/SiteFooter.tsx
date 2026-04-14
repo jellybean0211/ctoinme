@@ -17,7 +17,7 @@ function LinkedInIcon({ className }: { className?: string }) {
 const socialLinks = [
   {
     name: "Website",
-    href: "https://prestonojb.com",
+    href: "https://ctoinme.prestonojb.com",
     icon: Globe,
   },
   {
